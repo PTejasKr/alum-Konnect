@@ -1,0 +1,47 @@
+.event-listings {
+  margin-top: 3rem;
+}
+
+.event-listings h2 {
+  margin-bottom: 2rem;
+}
+
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.event-item {
+  background-color: var(--secondary-bg-color);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+.event-item h3 {
+  color: var(--accent-color-1);
+  margin-bottom: 0.5rem;
+}
+
+.event-item .event-date-time,
+.event-item .event-location {
+  font-size: 0.9rem;
+  color: var(--accent-color-2);
+  margin-bottom: 0.5rem;
+}
+
+.event-item p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.event-item .btn {
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.submit-event {
+  margin-top: 3rem;
+}

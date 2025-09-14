@@ -1,0 +1,46 @@
+.job-listings {
+  margin-top: 3rem;
+}
+
+.job-listings h2 {
+  margin-bottom: 2rem;
+}
+
+.job-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.job-item {
+  background-color: var(--secondary-bg-color);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+.job-item h3 {
+  color: var(--accent-color-1);
+  margin-bottom: 0.5rem;
+}
+
+.job-item .job-company {
+  font-size: 0.9rem;
+  color: var(--accent-color-2);
+  margin-bottom: 1rem;
+}
+
+.job-item p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.job-item .btn {
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.post-job {
+  margin-top: 3rem;
+}

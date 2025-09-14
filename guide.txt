@@ -1,0 +1,7 @@
+Today's Major Changes (September 14, 2025):
+
+1.  Frontend Setup: Cleaned up the `frontend` folder and created a new React application.
+2.  Page Creation & Routing: Developed new pages for navigation links (About Us, Jobs/Internships, Events, Resources, Admin Dashboard) and configured routing.
+3.  Global Components: Integrated Navbar and Footer to appear on all website routes.
+4.  Styling & Theming: Applied a dark theme to the entire website and made the Navbar responsive.
+5.  Branding: Updated the website name from "Alumni Connect" to "AlumConnect".

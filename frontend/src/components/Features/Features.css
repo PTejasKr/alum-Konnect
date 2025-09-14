@@ -1,0 +1,40 @@
+.features {
+  padding: 50px 2rem;
+  text-align: center;
+  background-color: var(--primary-bg-color); /* Ensure consistent background */
+}
+
+.features h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.feature-item {
+  background-color: var(--secondary-bg-color); /* Dark theme card background */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Darker shadow for dark theme */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transitions */
+}
+
+.feature-item:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* More pronounced shadow on hover */
+}
+
+.feature-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--accent-color-1); /* Accent color for feature titles */
+}
+
+.feature-item p {
+  color: var(--text-color);
+}

@@ -1,0 +1,44 @@
+.hero {
+  background-color: var(--primary-bg-color); /* Dark theme background */
+  color: var(--text-color);
+  text-align: center;
+  padding: 100px 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* More prominent shadow */
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: var(--secondary-bg-color); /* Lighter dark background for content */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Inner shadow for content */
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--accent-color-1); /* Accent color for heading */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for readability */
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+}
+
+.btn-primary {
+  background-color: var(--accent-color-1);
+  color: #fff;
+  padding: 0.8rem 2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+.btn-primary:hover {
+  background-color: darken(var(--accent-color-1), 10%);
+  transform: translateY(-3px); /* Lift effect on hover */
+}

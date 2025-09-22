@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { NavLink, Link } from 'react-router-dom';
 import './Navbar.css';
 
 function Navbar() {
@@ -9,21 +10,25 @@ function Navbar() {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg"> {/* Added navbar-expand-lg */}
-      <div className="container-fluid"> {/* Added container-fluid for Bootstrap layout */}
-        <a className="navbar-brand" href="/">AlumConnect</a>
+    <nav className="navbar navbar-expand-lg">
+      <div className="container-fluid d-flex justify-content-between align-items-center">
+        <NavLink className="navbar-brand" to="/">AlumConnect</NavLink>
         <button className="navbar-toggler" type="button" onClick={toggleMenu} aria-controls="navbarNav" aria-expanded={isOpen ? "true" : "false"} aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarNav"> {/* Added collapse and navbar-collapse */}
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0"> {/* Added me-auto */}
-            <li className="nav-item"><a className="nav-link" href="/">Home</a></li> {/* Added nav-item, nav-link */}
-            <li className="nav-item"><a className="nav-link" href="/directory">Directory</a></li>
-            <li className="nav-item"><a className="nav-link" href="/network">Network</a></li>
-            <li className="nav-item"><a className="nav-link" href="/career">Career</a></li>
-            <li className="nav-item"><a className="nav-link" href="/events">Events</a></li>
-            <li className="nav-item"><a className="nav-link" href="/profile">Profile</a></li>
+        <div className={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarNav">
+          <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li className="nav-item"><NavLink className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'} to="/">Home</NavLink></li>
+            <li className="nav-item"><NavLink className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'} to="/directory">Directory</NavLink></li>
+            <li className="nav-item"><NavLink className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'} to="/network">Network</NavLink></li>
+            <li className="nav-item"><NavLink className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'} to="/career">Career</NavLink></li>
+            <li className="nav-item"><NavLink className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'} to="/events">Events</NavLink></li>
+            <li className="nav-item"><NavLink className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'} to="/profile">Profile</NavLink></li>
           </ul>
+          <div className="d-flex">
+            <NavLink to="/alumni-login" className="btn btn-primary rounded-pill px-3 py-2 me-2">Login</NavLink>
+            <NavLink to="/alumni-signup" className="btn btn-success rounded-pill px-3 py-2">Sign Up</NavLink>
+          </div>
         </div>
       </div>
     </nav>

@@ -1,2 +1,18 @@
-/* No specific styles needed here, global styles from index.css will apply */
-/* This file can be used for app-wide layout or specific overrides if necessary */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.App-header {
+  flex-shrink: 0;
+}
+
+.App-content {
+  flex-grow: 1;
+  padding-top: 60px; /* Adjust this value based on your navbar's actual height */
+}
+
+.App-footer {
+  flex-shrink: 0;
+}

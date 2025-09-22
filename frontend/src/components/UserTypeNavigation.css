@@ -1,0 +1,24 @@
+.user-type-nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.user-type-nav .nav-item {
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.user-type-nav .nav-item:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.user-type-nav .nav-item.active {
+  background-color: var(--primary-color);
+  color: white;
+}

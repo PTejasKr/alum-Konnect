@@ -78,3 +78,197 @@
   color: var(--text-color);
   margin-bottom: 0.5rem;
 }
+
+/* Styles for DirectoryPage */
+.search-section {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.search-input {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 60%;
+  max-width: 500px;
+}
+
+.alumni-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.alumni-item {
+  background-color: var(--background-color);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
+  text-align: left;
+}
+
+.alumni-item h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.alumni-item p {
+  font-size: 0.95rem;
+  color: var(--text-color);
+}
+
+/* Styles for NetworkPage */
+.network-updates .update-item {
+  background-color: var(--background-color);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.network-updates .update-item h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.network-updates .update-item p {
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+.network-updates .update-item .btn {
+  margin-top: 1rem;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.network-updates .update-item .btn:hover {
+  background-color: #5249e0;
+}
+
+.connect-alumni .btn {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.connect-alumni .btn:hover {
+  background-color: #5249e0;
+}
+
+/* Styles for CareerPage */
+.career-resources .resource-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.career-resources .resource-item {
+  background-color: var(--background-color);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
+  text-align: left;
+}
+
+.career-resources .resource-item h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.career-resources .resource-item p {
+  font-size: 0.95rem;
+  color: var(--text-color);
+}
+
+.career-resources .resource-item .btn {
+  margin-top: 1rem;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.career-resources .resource-item .btn:hover {
+  background-color: #5249e0;
+}
+
+.mentorship-opportunities .btn {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.mentorship-opportunities .btn:hover {
+  background-color: #5249e0;
+}
+
+/* Styles for ProfilePage */
+.profile-info {
+  text-align: left;
+}
+
+.profile-info p {
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+
+.profile-info .btn {
+  margin-top: 1rem;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.profile-info .btn:hover {
+  background-color: #5249e0;
+}
+
+.profile-activity {
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.profile-activity .activity-item {
+  background-color: var(--background-color);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
+  margin-bottom: 1rem;
+}
+
+.profile-activity .activity-item p {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.profile-activity .activity-item span {
+  font-size: 0.85rem;
+  color: #666;
+}

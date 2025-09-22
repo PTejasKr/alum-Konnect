@@ -1,14 +1,15 @@
 import React from 'react';
 import './HomePage.css';
+import Hero from '../components/Hero/Hero';
+import Features from '../components/Features/Features';
+import Testimonials from '../components/Testimonials/Testimonials';
 
 const HomePage = () => {
   return (
     <div className="home-page">
-      <section className="hero-section">
-        <h1>Welcome to AlumConnect</h1>
-        <p>The best place for alumni and students to connect, network, and grow.</p>
-        <a href="/directory" className="btn">Browse Directory</a>
-      </section>
+      <Hero />
+      <Features />
+      <Testimonials />
     </div>
   );
 };

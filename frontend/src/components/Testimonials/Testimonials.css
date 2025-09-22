@@ -1,6 +1,6 @@
 .testimonials {
-  background-color: var(--primary-bg-color); /* Dark theme background */
-  padding: 50px 2rem;
+  background-color: var(--background-color);
+  padding: 4rem 2rem;
   text-align: center;
 }
 
@@ -17,16 +17,16 @@
 }
 
 .testimonial-item {
-  background-color: var(--secondary-bg-color); /* Dark theme card background */
+  background-color: var(--card-background-color);
   padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Darker shadow for dark theme */
-  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transitions */
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .testimonial-item:hover {
-  transform: translateY(-5px); /* Lift effect on hover */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* More pronounced shadow on hover */
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .testimonial-item p {
@@ -37,5 +37,5 @@
 
 .testimonial-item h4 {
   font-weight: bold;
-  color: var(--accent-color-1); /* Accent color for names */
+  color: var(--primary-color);
 }

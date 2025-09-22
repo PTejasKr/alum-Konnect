@@ -1,9 +1,10 @@
 .event-listings {
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .event-listings h2 {
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 .event-grid {
@@ -13,22 +14,22 @@
 }
 
 .event-item {
-  background-color: var(--secondary-bg-color);
+  background-color: var(--card-background-color);
   padding: 2rem;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--box-shadow);
   text-align: left;
 }
 
 .event-item h3 {
-  color: var(--accent-color-1);
+  color: var(--primary-color);
   margin-bottom: 0.5rem;
 }
 
 .event-item .event-date-time,
 .event-item .event-location {
   font-size: 0.9rem;
-  color: var(--accent-color-2);
+  color: #666;
   margin-bottom: 0.5rem;
 }
 
@@ -40,8 +41,20 @@
 .event-item .btn {
   display: inline-block;
   margin-top: 1rem;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.event-item .btn:hover {
+  background-color: #5249e0;
 }
 
 .submit-event {
   margin-top: 3rem;
+  text-align: center;
 }

@@ -1,55 +1,26 @@
-/* Custom styles for dark theme colors, not directly related to Bootstrap layout */
-.navbar-brand {
-  color: var(--text-color);
-  text-decoration: none;
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-right: 12rem; /* Even further increased spacing */
-}
-
-.nav-link { /* Targeting Bootstrap's nav-link */
-  color: var(--text-color) !important; /* Override Bootstrap's default link color */
-  transition: color 0.3s ease;
-}
-
-.nav-link:hover {
-  color: var(--accent-color-1) !important; /* Accent color on hover */
-}
-
-/* Custom button styles (Bootstrap classes will handle most of it) */
-.btn-primary {
-  background-color: var(--accent-color-1) !important;
-  border-color: var(--accent-color-1) !important;
-}
-
-.btn-primary:hover {
-  filter: brightness(1.2);
-}
-
-.btn-success {
-  background-color: var(--accent-color-2) !important;
-  border-color: var(--accent-color-2) !important;
-}
-
-.btn-success:hover {
-  filter: brightness(1.2);
-}
-
-/* Adjustments for dark theme on Bootstrap components */
 .navbar {
-  background-color: var(--secondary-bg-color) !important;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  display: flex;
-  justify-content: center; /* Changed to center */
-  align-items: center;
+  background-color: var(--card-background-color) !important;
+  box-shadow: var(--box-shadow);
   padding: 1rem 2rem;
 }
 
-.navbar-auth {
-  display: flex; /* Ensure horizontal alignment of auth buttons */
-  margin-left: 2rem; /* Add spacing to the left of auth buttons */
+.navbar-brand {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: var(--text-color) !important;
+  transition: color 0.3s ease;
+  margin-right: 1rem;
+}
+
+.nav-link:hover {
+  color: var(--primary-color) !important;
 }
 
 .navbar-toggler-icon {
-  filter: invert(1); /* Make hamburger icon visible on dark background */
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 0.55)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }

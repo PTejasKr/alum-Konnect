@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
 
 :root {
-  --primary-bg-color: #1a1a1a;
-  --secondary-bg-color: #2c2c2c;
-  --text-color: #f0f0f0;
-  --accent-color-1: #61dafb;
-  --accent-color-2: #a0a0a0;
+  --primary-color: #6C63FF;
+  --background-color: #F5F7FA;
+  --text-color: #333333;
+  --card-background-color: #FFFFFF;
+  --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 body {
@@ -13,7 +13,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--primary-bg-color);
+  background-color: var(--background-color);
   color: var(--text-color);
   box-sizing: border-box;
 }
